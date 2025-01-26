@@ -1,32 +1,53 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+header{
+  background-color: #F6F9FF;
 }
+
+.containert1{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6{
+  overflow-y: hidden;
+}
+
+main {
+  flex: 1;
+}
+
+.page-item.active > .page-link,
+.page-link.active {
+  z-index: 3;
+  color: #ffffff; /* Change text color */
+  background-color: #699afc; /* Change background color */
+  border-color: #8ec1f8; /* Change border color */
+}
+
+/* Optional: Add hover effect for active link if desired */
+.page-item.active > .page-link:hover,
+.page-link.active:hover {
+  color: #fff; /* Ensure text color stays the same */
+  background-color: #0056b3; /* Hover background color */
+  border-color: #0056b3; /* Hover border color */
+}
+
+
+
 
 @keyframes App-logo-spin {
   from {
@@ -34,5 +55,72 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar>.container-fluid{
+    justify-content: initial !important;
+  }
+}
+
+@media (max-width: 420px){
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    transition: left 0.3s ease-in-out;
+    z-index: 9999; /* Ensure the menu is on top of other elements */
+  }
+  
+  /* When the navbar is active (opened), slide it in */
+  .navbar-collapse.collapse.show {
+    left: 0;
+  }
+
+  .navbar>.container-fluid{
+    justify-content: flex-start !important;
+  }
+
+  .navbar-toggler{
+    margin-right: 1em !important;
+  }
+}
+
+@media (max-width: 600px){
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    transition: left 0.3s ease-in-out;
+    z-index: 9999; 
+  }
+  
+  /* When the navbar is active (opened), slide it in */
+  .navbar-collapse.collapse.show {
+    left: 0;
+  }
+
+  .navbar>.container-fluid{
+    justify-content: space-between !important;
+  }
+
+  .navbar-toggler{
+    margin-right: 1em !important;
+  }
+}
+
+@media (min-width: 1441px) {
+  .pagination .page-item .page-link {
+    font-size: 1.5rem; 
+    size: 2rem;
+    padding: 1rem 1.5rem; 
+    
   }
 }

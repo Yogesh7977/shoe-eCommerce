@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-cart-container{
+    margin-top: 5%;
+}  
+
+.cart-container{
+    border: 1px solid rgb(161, 161, 161);
+    padding: 0% !important;
+    border-radius: 7px;
+}  
+
+.card-image{
+    width: fit-content;
+    margin-right: 2% !important;
+    margin-left: 2% !important;
+    border-radius: 10px;
+}
+
+.card-image img{
+    width: 100px !important;
+    height: 100% !important;
+    border-radius: 10px;
+}
+
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    border-bottom: 2px solid #ddd;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px; 
+    flex-grow: 1; 
+}
+
+.card-body .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.card-title:hover{
+    color: rgb(80, 170, 255);
+}
+
+.card-body .card-text {
+    font-size: 1.5rem;
+}
+
+.details-rating{
+    font-size: 0.7rem;
+    background-color: green;
+    width: 16%;
+    color: white;
+    padding-left: 1%;
+    margin-bottom: 0;
+}
+
+.card-title-and-delete{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+
+.delete-icon{
+    size: 2rem;
+    height: 2em;
+    width: 1.3em;
+    color: gray;
+    z-index: 1000;
+}

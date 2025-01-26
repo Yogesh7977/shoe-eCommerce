@@ -1,0 +1,85 @@
+@media (max-width: 250px) {
+  .search-box{
+    width: 10% !important;
+    padding: 0;
+    margin: 0;
+  }
+  #searchInput{
+    display: none;
+  }
+}
+
+/* Small Mobiles (up to 360px) */
+@media (max-width: 360px) {
+  .subLabel{
+    display: none;
+  }
+  .navbar-brand{
+    font-size: 0.7rem !important;
+  }
+  .search-box{
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+  }
+  .nav-container{
+    padding: 0%;
+}
+
+.containerfluid{
+  justify-content: space-evenly !important;
+}
+}
+  
+  /* Mobiles (361px to 576px) */
+  @media (min-width: 361px) and (max-width: 576px) {
+    .subLabel{
+      display: none;
+    }
+    .navbar-brand{
+      font-size: 1rem !important;
+    }
+    .search-box{
+      width: 43%;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-container{
+      padding: 0%;
+  }
+  }
+  
+  /* Tablets (577px to 768px) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .subLabel{
+      display: none;
+    }
+    .navbar-brand{
+      font-size: 1rem !important;
+    }
+    .search-box{
+      width: 60%;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-container{
+      padding: 0%;
+  }
+  }
+  
+  /* Small Laptops (769px to 1024px) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for small laptops */
+  }
+  
+  /* Large Laptops (1025px to 1440px) */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    /* Styles for large laptops */
+  }
+  
+  /* Desktops (1441px and above) */
+  @media (min-width: 1441px) {
+    /* Styles for desktops */
+  }
+  

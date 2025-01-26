@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    max-height: vh;
+}
+
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.registerHead{
+    position: relative;
+    color: black;
+    font-family: Agency FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 15px;
+}
+
+.registerContainer{
+    margin-top: 10rem;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fluid{
+    position: relative;
+    border-radius: 0px 5px 5px 0px;
+    max-height: 100vh !important;
+    width: 100%;
+    height: -webkit-fill-available !important;
+    object-fit: cover;
+}
+
+.registerBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: box-shadow 1s ease;
+}
+
+.card:hover{
+    box-shadow: 0 0 10px 1px #DB8E3B;
+}

@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+.details-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.details-container > div {
+    width: 50%;
+}
+
+.details-image img{
+    width: 750px;
+    height: 700px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 15px;
+}
+
+.details-description{
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+.details-price {
+    font-size: 2rem !important;
+}
+
+.details-genderAndQuantity{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.details-gender{
+    font-size: 1.2rem;
+} 
+
+.details-quantity{
+    font-size: 1.2rem;
+}
+
+.details-rating{
+    font-size: 1.2rem;
+    background-color: green;
+    width: 34%;
+    color: white;
+    padding-left: 1%;
+}
+
+.fav-container{
+    display: flex;
+    align-items: center;
+}
+
+.fav-container h3 {
+    margin-right: 7px; /* Adjust the gap between title and icon (you can increase or decrease this value) */
+}
+
+.add-to-cart{
+    width: 30%;
+    color: white;
+    font-size: larger;
+}
